@@ -30,7 +30,8 @@ class Sokoban:
               2: "🏳 ",
               3: "⬜",
               4: "  ",
-              5: "🚩"}
+              5: "🚩",
+              6: " 🏁"}
 
         for fila in self.mapa:
         # Reemplazar cada número en la fila por su emoji correspondiente
@@ -239,6 +240,81 @@ class Sokoban:
         self.limpiar_terminal()
         self.imprimir_mapa()
 
+#PERSONAJE-META, CAJA, PISO
+
+    #Derecha
+    def movimiento17(self):
+        self.mapa[self.personaje_fila][self.personaje_columna] = 2
+        self.mapa[self.personaje_fila][self.personaje_columna + 1 ] = 0
+        self.mapa[self.personaje_fila][self.personaje_columna + 2 ] = 1
+        self.personaje_columna  += 1
+        self.limpiar_terminal()
+        self.imprimir_mapa()
+    
+    #Izquierda
+    def movimiento18(self):
+        self.mapa[self.personaje_fila][self.personaje_columna] = 2
+        self.mapa[self.personaje_fila][self.personaje_columna - 1 ] = 0
+        self.mapa[self.personaje_fila][self.personaje_columna - 2 ] = 1
+        self.personaje_columna  -= 1
+        self.limpiar_terminal()
+        self.imprimir_mapa()
+
+    #Arriba
+    def movimiento19(self):
+        self.mapa[self.personaje_fila][self.personaje_columna] = 2
+        self.mapa[self.personaje_fila - 1][self.personaje_columna] = 0
+        self.mapa[self.personaje_fila - 2][self.personaje_columna] = 1
+        self.personaje_fila  -= 1
+        self.limpiar_terminal()
+        self.imprimir_mapa()
+
+    #Abajo
+    def movimiento20(self):
+        self.mapa[self.personaje_fila][self.personaje_columna] = 2
+        self.mapa[self.personaje_fila + 1][self.personaje_columna] = 0
+        self.mapa[self.personaje_fila + 2][self.personaje_columna] = 1
+        self.personaje_fila  += 1
+        self.limpiar_terminal()
+        self.imprimir_mapa()
+
+#PERSONAJE, CAJA, META
+
+    #Derecha
+    def movimiento21(self):
+        self.mapa[self.personaje_fila][self.personaje_columna] = 4
+        self.mapa[self.personaje_fila][self.personaje_columna + 1 ] = 0
+        self.mapa[self.personaje_fila][self.personaje_columna + 2 ] = 6
+        self.personaje_columna  += 1
+        self.limpiar_terminal()
+        self.imprimir_mapa()
+    
+    #Izquierda
+    def movimiento22(self):
+        self.mapa[self.personaje_fila][self.personaje_columna] = 4
+        self.mapa[self.personaje_fila][self.personaje_columna - 1 ] = 0
+        self.mapa[self.personaje_fila][self.personaje_columna - 2 ] = 6
+        self.personaje_columna  -= 1
+        self.limpiar_terminal()
+        self.imprimir_mapa()
+
+    #Arriba
+    def movimiento23(self):
+        self.mapa[self.personaje_fila][self.personaje_columna] = 4
+        self.mapa[self.personaje_fila - 1][self.personaje_columna] = 0
+        self.mapa[self.personaje_fila - 2][self.personaje_columna] = 6
+        self.personaje_fila  -= 1
+        self.limpiar_terminal()
+        self.imprimir_mapa()
+
+    #Abajo
+    def movimiento24(self):
+        self.mapa[self.personaje_fila][self.personaje_columna] = 4
+        self.mapa[self.personaje_fila + 1][self.personaje_columna] = 0
+        self.mapa[self.personaje_fila + 2][self.personaje_columna] = 6
+        self.personaje_fila  += 1
+        self.limpiar_terminal()
+        self.imprimir_mapa()
 
 
     def jugar(self):
@@ -254,6 +330,10 @@ class Sokoban:
                 self.movimiento9()
             elif self.mapa[self.personaje_fila][self.personaje_columna] == 0 and self.mapa[self.personaje_fila][self.personaje_columna + 1] == 1 and self.mapa[self.personaje_fila][self.personaje_columna + 2] == 4:
                 self.movimiento13()
+            elif self.mapa[self.personaje_fila][self.personaje_columna] == 5 and self.mapa[self.personaje_fila][self.personaje_columna + 1] == 1 and self.mapa[self.personaje_fila][self.personaje_columna + 2] == 4:
+                self.movimiento17()
+            elif self.mapa[self.personaje_fila][self.personaje_columna] == 0 and self.mapa[self.personaje_fila][self.personaje_columna + 1] == 1 and self.mapa[self.personaje_fila][self.personaje_columna + 2] == 2:
+                self.movimiento21()
             else:
                 self.movimiento0()
 
@@ -266,6 +346,10 @@ class Sokoban:
                 self.movimiento10()
             elif self.mapa[self.personaje_fila][self.personaje_columna] == 0 and self.mapa[self.personaje_fila][self.personaje_columna - 1] == 1 and self.mapa[self.personaje_fila][self.personaje_columna - 2] == 4:
                 self.movimiento14()
+            elif self.mapa[self.personaje_fila][self.personaje_columna] == 5 and self.mapa[self.personaje_fila][self.personaje_columna - 1] == 1 and self.mapa[self.personaje_fila][self.personaje_columna - 2] == 4:
+                self.movimiento18()
+            elif self.mapa[self.personaje_fila][self.personaje_columna] == 0 and self.mapa[self.personaje_fila][self.personaje_columna - 1] == 1 and self.mapa[self.personaje_fila][self.personaje_columna - 2] == 2:
+                self.movimiento22()
             else:
                 self.movimiento0()  
 
@@ -278,6 +362,10 @@ class Sokoban:
                 self.movimiento11()
             elif self.mapa[self.personaje_fila][self.personaje_columna] == 0 and self.mapa[self.personaje_fila - 1][self.personaje_columna] == 1 and self.mapa[self.personaje_fila - 2][self.personaje_columna] == 4:
                 self.movimiento15()
+            elif self.mapa[self.personaje_fila][self.personaje_columna] == 5 and self.mapa[self.personaje_fila - 1][self.personaje_columna] == 1 and self.mapa[self.personaje_fila - 2][self.personaje_columna] == 4:
+                self.movimiento19()
+            elif self.mapa[self.personaje_fila][self.personaje_columna] == 0 and self.mapa[self.personaje_fila - 1][self.personaje_columna] == 1 and self.mapa[self.personaje_fila - 2][self.personaje_columna] == 2:
+                self.movimiento23()
             else:
                 self.movimiento0()
 
@@ -290,6 +378,10 @@ class Sokoban:
                 self.movimiento12()
             elif self.mapa[self.personaje_fila][self.personaje_columna] == 0 and self.mapa[self.personaje_fila + 1][self.personaje_columna] == 1 and self.mapa[self.personaje_fila + 2][self.personaje_columna] == 4:
                 self.movimiento16()
+            elif self.mapa[self.personaje_fila][self.personaje_columna] == 5 and self.mapa[self.personaje_fila + 1][self.personaje_columna] == 1 and self.mapa[self.personaje_fila + 2][self.personaje_columna] == 4:
+                self.movimiento20()
+            elif self.mapa[self.personaje_fila][self.personaje_columna] == 0 and self.mapa[self.personaje_fila + 1][self.personaje_columna] == 1 and self.mapa[self.personaje_fila + 2][self.personaje_columna] == 2:
+                self.movimiento20()
             else:
                 self.movimiento0()
         else:
