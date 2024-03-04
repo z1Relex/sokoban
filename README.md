@@ -16,7 +16,7 @@ El juego sokoban consiste en acomodar cajas en puntos determinados por las metas
 
 ## 2. Elementos del juego
 
-### 2.0 Mapa de juego
+### 2.0 Mapas de juego
 
 Cada nivel del juego se colocará dentro de una array bidimensional, colocando numeros para representar los elementos de juego, a continuación se tiene un ejemplo básico de nivel.
 
@@ -29,7 +29,7 @@ mapa = []
 - 2 - Metas
 - 3 - Paredes
 - 4 - Piso
-- 5 - Pesonaje meta
+- 5 - Personaje meta
 - 6 - Caja meta
 
 ## 3. Controles
@@ -43,34 +43,37 @@ Para moverse en el juego el usuario utilizará alguna de las siguientes letras p
 
 ## 4. Funciones a implementar
 
-| No. |Función | Kanban | Fecha terminación |
+| Método |Función | Kanban | Fecha terminación |
 | --- | --- | --- | --- |
 | 0. | Cargar el siguiente nivel. | Por hacer | - | | - |
 | 1. | Repetir el juego hasta terminar el nivel. | Por hacer | - | | - |
-| 2. | Imprimir mapa.| Por hacer | - |
-| 3. | Leer el movimiento. | Por hacer | - |
-| 4. | Evaluar el movimiento del usuario. | Por hacer | - |
+| imprimir_mapa | Imprimir mapa.| Hecho | 03/03 |
+| limpiar_terminal | Limpiar la terminal.| Hecho | 03/03 |
+| 3. | Leer el movimiento. | Hecho | 03/03 |
+| 4. | Evaluar el movimiento del usuario. | Hecho | 03/03 |
 
 ## Derecha
 
-| No. | Función | Kanban | Inicio | Fin | Fecha terminación |
+| Método | Función | Kanban | Inicio | Fin | Fecha terminación |
 | --- | --- | --- | --- | --- | --- |
-| 5. | Personaje, pasillo  | Por hacer | [0,4] | [4,0] | - |
-| 6. | Personaje, meta  | Por hacer | [0,2] | [4,6] |- |
-| 7. | Personaje, caja, pasillo | Por hacer | [0,1,4] | [4,0,1] | - |
-| 8. | Personaje, caja,  meta | Por hacer | [0,1,2] | [4,0,5] | - |
+| movimiento1 | Personaje, pasillo  | Hecho | [0,4] | [4,0] | 03/03 |
+| movimiento5 | Personaje, meta  | Hecho | [0,2] | [4,5] | 03/03 |
+| movimiento9 | Personaje_meta, pasillo | Hecho | [5,4] | [2,0] | 03/03 |
+| movimiento13 | Personaje, caja, pasillo | Hecho | [0,1,4] | [4,0,1] | 03/03 |
+| movimiento17. | Personaje_meta, caja, pasillo | Hecho | [5,1,4] | [2,0,1] | 03/03 |
+| 8. | Personaje, caja,  meta | Por hacer | [0,1,2] | [4,0,6] | - |
 | 9. | Personaje, caja_meta, pasillo | Por hacer | [] | [] | - |
 | 10. |Personaje, caja_meta, meta | Por hacer | [] | [] | - |
-| 11. | Personaje_meta, pasillo | Por hacer | [] | [] | - |
+
 | 12. | Personaje_meta, meta | Por hacer | [] | [] | - |
-| 13. | Personaje_meta, caja, pasillo | Por hacer | [] | [] | - |
+
 | 14. | Personaje_meta, caja, meta | Por hacer | [] | [] | - |
 | 15. | Personaje_meta, caja_meta, pasillo | Por hacer | [] | [] | - |
 | 16. | Personaje_meta, caja_meta, meta | Por hacer | [] | [] | - |
 
 ## Izquierda
 
-| No. | Función | Kanban | Fecha terminación |
+| Método | Función | Kanban | Fecha terminación |
 | --- | --- | --- | --- |
 | 17. | Personaje y espacio | Por hacer | - |
 | 18. | Personaje y meta | Por hacer | - |
@@ -87,7 +90,7 @@ Para moverse en el juego el usuario utilizará alguna de las siguientes letras p
 
 ## Arriba
 
-| No. | Función | Kanban | Fecha terminación |
+| Método | Función | Kanban | Fecha terminación |
 | --- | --- | --- | --- |
 | 29. | Personaje y espacio | Por hacer | - |
 | 30. | Personaje y meta | Por hacer | - |
@@ -104,7 +107,7 @@ Para moverse en el juego el usuario utilizará alguna de las siguientes letras p
 
 ## Abajo
 
-| No. | Función | Kanban | Fecha terminación |
+| Método | Función | Kanban | Fecha terminación |
 | --- | --- | --- | --- |
 | 41. | Personaje y espacio | Por hacer | - |
 | 42. | Personaje y meta | Por hacer | - |
