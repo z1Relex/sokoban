@@ -55,7 +55,7 @@ Para moverse y realizar acciones en el juego el usuario utilizará las siguiente
 | jugar | Leer el movimiento. | Hecho | 03/03 |
 | jugar | Evaluar el movimiento del usuario. | Hecho | 03/03 |
 | elegir_nivel | Cargar nivel / Reiniciar  | Hecho | 04/03 |
-| deshacer_ | Deshacer el último movimiento  | Por hacer | -- |
+| deshacer_mov | Deshacer el último movimiento  | Por hacer | -- |
 
 ## Derecha
 
@@ -69,10 +69,10 @@ Para moverse y realizar acciones en el juego el usuario utilizará las siguiente
 | movimiento21 | Personaje, caja,  meta | Hecho | [0,1,2] | [4,0,6] | 03/03 |
 | movimiento25 | Personaje, caja_meta, piso | Hecho | [0,6,4] | [4,5,1] | 04/03 |
 | movimiento29 | Personaje, caja_meta, meta | Hecho | [0,6,2] | [4,5,6] | 04/03 |
-| movimiento33 | Personaje_meta, meta | Por hacer | [5,2] | [2,5] | 04/03 |
-| movimiento37 | Personaje_meta, caja, meta | Por hacer | [5,1,2] | [2,0,5] | 04/03 |
-| movimiento41 | Personaje_meta, caja_meta, piso | Por hacer | [5,6,4] | [2,5,1] | 04/03 |
-| movimiento45 | Personaje_meta, caja_meta, meta | Por hacer | [5,6,2] | [2,5,6] | 04/03 |
+| movimiento33 | Personaje_meta, meta | Hecho | [5,2] | [2,5] | 04/03 |
+| movimiento37 | Personaje_meta, caja, meta | Hecho | [5,1,2] | [2,0,5] | 04/03 |
+| movimiento41 | Personaje_meta, caja_meta, piso | Hecho | [5,6,4] | [2,5,1] | 04/03 |
+| movimiento45 | Personaje_meta, caja_meta, meta | Hecho | [5,6,2] | [2,5,6] | 04/03 |
 
 ## Izquierda
 
@@ -86,10 +86,10 @@ Para moverse y realizar acciones en el juego el usuario utilizará las siguiente
 | movimiento22 | Personaje, caja,  meta | Hecho | [0,1,2] | [4,0,6] | 03/03 |
 | movimiento26 | Personaje, caja_meta, piso | Hecho | [0,6,4] | [4,5,1] | 04/03 |
 | movimiento30 | Personaje, caja_meta, meta | Hecho | [0,6,2] | [4,5,6] | 04/03 |
-| movimiento33 | Personaje_meta, meta | Por hacer | [5,2] | [2,5] | 04/03 |
-| movimiento37 | Personaje_meta, caja, meta | Por hacer | [5,1,2] | [2,0,5] | 04/03 |
-| movimiento41 | Personaje_meta, caja_meta, piso | Por hacer | [5,6,4] | [2,5,1] | 04/03 |
-| movimiento45 | Personaje_meta, caja_meta, meta | Por hacer | [5,6,2] | [2,5,6] | 04/03 |
+| movimiento33 | Personaje_meta, meta | Hecho | [5,2] | [2,5] | 04/03 |
+| movimiento37 | Personaje_meta, caja, meta | Hecho | [5,1,2] | [2,0,5] | 04/03 |
+| movimiento41 | Personaje_meta, caja_meta, piso | Hecho | [5,6,4] | [2,5,1] | 04/03 |
+| movimiento45 | Personaje_meta, caja_meta, meta | Hecho | [5,6,2] | [2,5,6] | 04/03 |
 
 ## Arriba
 
@@ -103,10 +103,10 @@ Para moverse y realizar acciones en el juego el usuario utilizará las siguiente
 | movimiento23 | Personaje, caja,  meta | Hecho | [0,1,2] | [4,0,6] | 03/03 |
 | movimiento27 | Personaje, caja_meta, piso | Hecho | [0,6,4] | [4,5,1] | 04/03 |
 | movimiento31 | Personaje, caja_meta, meta | Hecho | [0,6,2] | [4,5,6] | 04/03 |
-| movimiento33 | Personaje_meta, meta | Por hacer | [5,2] | [2,5] | 04/03 |
-| movimiento37 | Personaje_meta, caja, meta | Por hacer | [5,1,2] | [2,0,5] | 04/03 |
-| movimiento41 | Personaje_meta, caja_meta, piso | Por hacer | [5,6,4] | [2,5,1] | 04/03 |
-| movimiento45 | Personaje_meta, caja_meta, meta | Por hacer | [5,6,2] | [2,5,6] | 04/03 |
+| movimiento33 | Personaje_meta, meta | Hecho | [5,2] | [2,5] | 04/03 |
+| movimiento37 | Personaje_meta, caja, meta | Hecho | [5,1,2] | [2,0,5] | 04/03 |
+| movimiento41 | Personaje_meta, caja_meta, piso | Hecho | [5,6,4] | [2,5,1] | 04/03 |
+| movimiento45 | Personaje_meta, caja_meta, meta | Hecho | [5,6,2] | [2,5,6] | 04/03 |
 
 ## Abajo
 
@@ -120,10 +120,10 @@ Para moverse y realizar acciones en el juego el usuario utilizará las siguiente
 | movimiento24 | Personaje, caja,  meta | Hecho | [0,1,2] | [4,0,6] | 03/03 |
 | movimiento28 | Personaje, caja_meta, piso | Hecho | [0,6,4] | [4,5,1] | 04/03 |
 | movimiento32 | Personaje, caja_meta, meta | Hecho | [0,6,2] | [4,5,6] | 04/03 |
-| movimiento33 | Personaje_meta, meta | Por hacer | [5,2] | [2,5] | 04/03 |
-| movimiento37 | Personaje_meta, caja, meta | Por hacer | [5,1,2] | [2,0,5] | 04/03 |
-| movimiento41 | Personaje_meta, caja_meta, piso | Por hacer | [5,6,4] | [2,5,1] | 04/03 |
-| movimiento45 | Personaje_meta, caja_meta, meta | Por hacer | [5,6,2] | [2,5,6] | 04/03 |
+| movimiento33 | Personaje_meta, meta | Hecho | [5,2] | [2,5] | 04/03 |
+| movimiento37 | Personaje_meta, caja, meta | Hecho | [5,1,2] | [2,0,5] | 04/03 |
+| movimiento41 | Personaje_meta, caja_meta, piso | Hecho | [5,6,4] | [2,5,1] | 04/03 |
+| movimiento45 | Personaje_meta, caja_meta, meta | Hecho | [5,6,2] | [2,5,6] | 04/03 |
 
 ## Funciones especiales
 
