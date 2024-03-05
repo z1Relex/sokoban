@@ -19,6 +19,7 @@ class Sokoban:
     mapa = []
     personaje_columna = 0
     personaje_fila = 0
+    Nivel = 0
 
     def __init__ (self):
         pass
@@ -93,6 +94,15 @@ class Sokoban:
         self.imprimir_mapa()
 
 
+    def elegir_nivel(self):
+        if self.Nivel == 1:
+            jugar.nivel1()
+        elif self.Nivel == 2:
+            jugar.nivel2()
+        elif self.Nivel == 3:
+            jugar.nivel3()
+
+
 
 
     #Imprime el mapa de nuevo si el personaje choca con una pared
@@ -102,7 +112,7 @@ class Sokoban:
 
 # PERSONAJE, PISO
         
-    #Derecha personaje, pasillo
+    #Derecha 
     def movimiento1(self):
         self.mapa[self.personaje_fila][self.personaje_columna] = 4
         self.mapa[self.personaje_fila][self.personaje_columna + 1 ] = 0
@@ -110,7 +120,7 @@ class Sokoban:
         self.limpiar_terminal()
         self.imprimir_mapa()
     
-    #Izquierda personaje, pasillo
+    #Izquierda 
     def movimiento2(self):
         self.mapa[self.personaje_fila][self.personaje_columna] = 4
         self.mapa[self.personaje_fila][self.personaje_columna - 1 ] = 0
@@ -118,7 +128,7 @@ class Sokoban:
         self.limpiar_terminal()
         self.imprimir_mapa()
 
-    #Arriba personaje, pasillo
+    #Arriba 
     def movimiento3(self):
         self.mapa[self.personaje_fila][self.personaje_columna] = 4
         self.mapa[self.personaje_fila - 1][self.personaje_columna] = 0
@@ -126,7 +136,7 @@ class Sokoban:
         self.limpiar_terminal()
         self.imprimir_mapa()
 
-    #Abajo personaje, pasillo
+    #Abajo 
     def movimiento4(self):
         self.mapa[self.personaje_fila][self.personaje_columna] = 4
         self.mapa[self.personaje_fila + 1][self.personaje_columna] = 0
@@ -661,6 +671,8 @@ class Sokoban:
                 self.movimiento48()
             else:
                 self.movimiento0()
+        elif movimiento.lower() == "r":
+            jugar.elegir_nivel()
         else:
             self.limpiar_terminal()
             self.imprimir_mapa()
@@ -668,25 +680,20 @@ class Sokoban:
 
 
 jugar = Sokoban()
+
 print("Bienvenido a Sokoban!")
 
 while True:
     try:
-        Nivel = int(input("Elige el nivel deseado:"))
-        if Nivel in [1, 2, 3]:
+        jugar.Nivel = int(input("Elige el nivel deseado:"))
+        if jugar.Nivel in [1, 2, 3]:
             break
         else:
             print("Por favor, introduce un nivel válido (1, 2, 3).")
     except ValueError:
         print("Por favor, introduce un número.")
 
-if Nivel == 1:
-    jugar.nivel1()
-elif Nivel == 2:
-    jugar.nivel2()
-elif Nivel == 3:
-    jugar.nivel3()
+jugar.elegir_nivel()
 
 while True:
     jugar.jugar()
-
