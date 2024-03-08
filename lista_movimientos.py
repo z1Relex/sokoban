@@ -559,6 +559,10 @@ class Movimientos:
             else:
                 self.movimiento0()
         elif movimiento.lower() == "r":
+            self.limpiar_terminal()
+            self.seleccion_nivel()
+        elif movimiento.lower() == "x":
+            self.limpiar_terminal()
             self.elegir_nivel()
         else:
             self.limpiar_terminal()
