@@ -44,6 +44,16 @@ class Sokoban(Mapas, Movimientos):
         os.system("cls" if os.name == "nt" else "clear")
 
     def elegir_nivel(self):
+        while True:
+            try:
+                jugar.Nivel = int(input("Elige el nivel deseado:"))
+                if jugar.Nivel in [1, 2, 3]:
+                    break
+                else:
+                    print("Por favor, introduce un nivel válido (1, 2, 3).")
+            except ValueError:
+                print("Por favor, introduce un número.")
+
         if self.Nivel == 1:
             jugar.nivel1()
         elif self.Nivel == 2:
@@ -73,16 +83,6 @@ jugar = Sokoban()
 
 print("Bienvenido a Sokoban!")
 
-while True:
-    try:
-        jugar.Nivel = int(input("Elige el nivel deseado:"))
-        if jugar.Nivel in [1, 2, 3]:
-            break
-        else:
-            print("Por favor, introduce un nivel válido (1, 2, 3).")
-    except ValueError:
-        print("Por favor, introduce un número.")
-
 jugar.elegir_nivel()
 
 while True:
@@ -93,3 +93,4 @@ if jugar.Nivel != 3:
     print("Nivel completado! Pulsa Enter para continuar o X para salir al menu.")
 else:
     print("Nivel completado! Gracias por jugar.")
+    
