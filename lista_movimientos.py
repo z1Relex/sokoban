@@ -1,7 +1,8 @@
 import msvcrt
 
 class Movimientos:
-    #Imprime el mapa de nuevo si el personaje choca con una pared
+
+#Imprime el mapa de nuevo si el personaje choca con una pared
     def movimiento0(self):
         self.limpiar_terminal()
         self.imprimir_mapa()
@@ -446,6 +447,20 @@ class Movimientos:
         self.limpiar_terminal()
         self.imprimir_mapa()
 
+#HABILIDAD ESPECIAL
+    
+    def movimiento99(self):
+        for columna in range(len(self.mapa[self.personaje_fila])):
+            if self.mapa[self.personaje_fila][columna] == 1:  # Si la celda es una caja
+                self.mapa[self.personaje_fila][columna] = 4  # La reemplazamos por un espacio en blanco
+            if self.mapa[self.personaje_fila][columna] == 6:  # Si la celda es una caja-meta
+                self.mapa[self.personaje_fila][columna] = 2  # La reemplazamos por una meta
+        self.contador_he += 1                
+        self.limpiar_terminal()
+        self.imprimir_mapa() 
+        print("¡HABILIDAD ESPECIAL ACTIVADA! Las cajas ubicadas en la misma fila que el personaje han sido destruidas.")      
+
+
 
     def movimientos_juego(self):
         tecla = msvcrt.getch()
@@ -561,6 +576,14 @@ class Movimientos:
                 self.movimiento48()
             else:
                 self.movimiento0()
+
+        elif movimiento.lower() == "q":
+            if self.contador_he == 0:
+                self.movimiento99()
+            else:
+                self.limpiar_terminal()
+                self.imprimir_mapa() 
+                print ("¡Habilidad especial ya utilizada!")
         elif movimiento.lower() == "r":
             self.seleccion_nivel()
         elif movimiento.lower() == "x":
