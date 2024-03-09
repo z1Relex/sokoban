@@ -1,3 +1,5 @@
+import msvcrt
+
 class Movimientos:
     #Imprime el mapa de nuevo si el personaje choca con una pared
     def movimiento0(self):
@@ -446,7 +448,8 @@ class Movimientos:
 
 
     def movimientos_juego(self):
-        movimiento = input()
+        tecla = msvcrt.getch()
+        movimiento = tecla.decode()
         if movimiento.lower() == "d":
             if self.mapa[self.personaje_fila][self.personaje_columna] == 0 and self.mapa[self.personaje_fila][self.personaje_columna + 1] == 4:
                 self.movimiento1()
