@@ -44,6 +44,7 @@ class Sokoban(Mapas, Movimientos):
         os.system("cls" if os.name == "nt" else "clear")
 
     def elegir_nivel(self):
+        self.limpiar_terminal()
         print("Bienvenido a Sokoban!")
         self.Nivel = 0
         while True:
@@ -66,6 +67,11 @@ class Sokoban(Mapas, Movimientos):
             jugar.nivel3()
 
     def jugar(self):
+        if self.Nivel == 0:
+            jugar.elegir_nivel()
+        else:
+            self.limpiar_terminal()
+            jugar.seleccion_nivel()
         while True:
             hay_cajas = False
             for fila in self.mapa:
@@ -78,24 +84,25 @@ class Sokoban(Mapas, Movimientos):
                     self.movimientos_juego()
             if not hay_cajas:
                 break
-
+        while True:
+            if jugar.Nivel != 3:
+                tecla_comp = input("Nivel completado! Pulsa Enter para continuar o X para salir al menu.")
+                if tecla_comp.lower() == "x":
+                    self.Nivel = 0
+                    break
+                elif tecla_comp.lower() == "":
+                    self.Nivel += 1
+                    break                    
+            else:
+                tecla_comp = input("Nivel completado! Gracias por jugar! Pulsa X para salir al menú.")
+                if tecla_comp.lower() == "x":
+                    self.Nivel = 0
+                    break
                 
 
 
 jugar = Sokoban()
 
-jugar.elegir_nivel()
-
 while True:
     jugar.jugar()
-    break
-
-while True:
-    if jugar.Nivel != 3:
-        tecla_comp = input("Nivel completado! Pulsa Enter para continuar o X para salir al menu.")
-        if tecla_comp.lower() == "x":
-            break
-    else:
-        tecla_comp = input("Nivel completado! Gracias por jugar! Pulsa X para salir al menú.")
-        if tecla_comp.lower() == "x":
-            break
+ 
