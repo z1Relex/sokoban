@@ -22,6 +22,7 @@ class Sokoban(Mapas, Movimientos):
     personaje_columna = 0
     personaje_fila = 0
     Nivel = 0
+    contador_he = 0
 
     def __init__ (self):
         pass
@@ -45,6 +46,7 @@ class Sokoban(Mapas, Movimientos):
         os.system("cls" if os.name == "nt" else "clear")
 
     def seleccion_nivel(self):
+        self.contador_he = 0
         self.limpiar_terminal()
         if self.Nivel == 0:
             print("Bienvenido a Sokoban!")
