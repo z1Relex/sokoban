@@ -43,35 +43,31 @@ class Sokoban(Mapas, Movimientos):
     def limpiar_terminal(self):
         os.system("cls" if os.name == "nt" else "clear")
 
-    def elegir_nivel(self):
-        self.limpiar_terminal()
-        print("Bienvenido a Sokoban!")
-        self.Nivel = 0
-        while True:
-            try:
-                jugar.Nivel = int(input("Elige el nivel deseado:"))
-                if jugar.Nivel in [1, 2, 3]:
-                    break
-                else:
-                    print("Por favor, introduce un nivel válido (1, 2, 3).")
-            except ValueError:
-                print("Por favor, introduce un número.")
-        self.seleccion_nivel()
-
     def seleccion_nivel(self):
-        if self.Nivel == 1:
-            jugar.nivel1()
-        elif self.Nivel == 2:
-            jugar.nivel2()
-        elif self.Nivel == 3:
-            jugar.nivel3()
+        self.limpiar_terminal()
+        if self.Nivel == 0:
+            print("Bienvenido a Sokoban!")
+            while True:
+                try:
+                    self.Nivel = int(input("Elige el nivel deseado:"))
+                    # Obtener el método correspondiente al nivel
+                    metodo_nivel = getattr(self, f'nivel{self.Nivel}', None)
+                    # Si el método existe, llamarlo y salir del bucle
+                    if metodo_nivel is not None:
+                        metodo_nivel()
+                        break
+                    else:
+                        self.limpiar_terminal()
+                        print(f"El nivel {self.Nivel} no existe.")
+                except ValueError:
+                    self.limpiar_terminal()
+                    print("Por favor, introduce un número.")
+        else:
+            metodo_nivel = getattr(self, f'nivel{self.Nivel}', None)
+            metodo_nivel()
 
     def jugar(self):
-        if self.Nivel == 0:
-            jugar.elegir_nivel()
-        else:
-            self.limpiar_terminal()
-            jugar.seleccion_nivel()
+        jugar.seleccion_nivel()
         while True:
             hay_cajas = False
             for fila in self.mapa:
@@ -80,7 +76,7 @@ class Sokoban(Mapas, Movimientos):
                     print(f"Posición actual : {self.personaje_fila, self.personaje_columna}")
                     print("Usa W,A,S,D para moverte por el mapa. Usa Q para utilizar tu habilidad especial.")
                     print("Usa R para reiniciar el nivel.")
-                    print("Usa Z para salir al menú.")
+                    print("Usa X para salir al menú.")
                     self.movimientos_juego()
             if not hay_cajas:
                 break
@@ -105,4 +101,3 @@ jugar = Sokoban()
 
 while True:
     jugar.jugar()
- 
