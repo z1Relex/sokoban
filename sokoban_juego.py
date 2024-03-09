@@ -15,6 +15,7 @@ Sokoban
 import os
 from lista_mapas import Mapas
 from lista_movimientos import Movimientos
+import msvcrt
 
 class Sokoban(Mapas, Movimientos):
     mapa = []
@@ -82,15 +83,19 @@ class Sokoban(Mapas, Movimientos):
                 break
         while True:
             if jugar.Nivel != 3:
-                tecla_comp = input("Nivel completado! Pulsa Enter para continuar o X para salir al menu.")
+                print("Nivel completado! Pulsa L para continuar o X para salir al menu.")
+                tecla_final = msvcrt.getch()
+                tecla_comp = tecla_final.decode()
                 if tecla_comp.lower() == "x":
                     self.Nivel = 0
                     break
-                elif tecla_comp.lower() == "":
+                elif tecla_comp.lower() == "l":
                     self.Nivel += 1
                     break                    
             else:
-                tecla_comp = input("Nivel completado! Gracias por jugar! Pulsa X para salir al menú.")
+                print("Nivel completado! Gracias por jugar! Pulsa X para salir al menú.")
+                tecla_final = msvcrt.getch()
+                tecla_comp = tecla_final.decode()
                 if tecla_comp.lower() == "x":
                     self.Nivel = 0
                     break
