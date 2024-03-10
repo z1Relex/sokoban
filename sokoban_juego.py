@@ -35,7 +35,7 @@ class Sokoban(Mapas, Movimientos):
               3: "⬜",
               4: "  ",
               5: "🚩",
-              6: " 🏁"}
+              6: " ✔"}
 
         for fila in self.mapa:
         # Reemplazar cada número en la fila por su emoji correspondiente
