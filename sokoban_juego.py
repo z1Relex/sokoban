@@ -52,11 +52,12 @@ class Sokoban(Mapas, Movimientos):
             print("Bienvenido a Sokoban!")
             while True:
                 try:
-                    self.Nivel = int(input("Introduce el nivel deseado y pulsa Enter para continuar:"))
+                    self.Nivel = int(input("Introduce el nivel deseado (1-4) y pulsa Enter para continuar:"))
                     # Obtener el método correspondiente al nivel
                     metodo_nivel = getattr(self, f'nivel{self.Nivel}', None)
                     # Si el método existe, llamarlo y salir del bucle
                     if metodo_nivel is not None:
+                        self.limpiar_terminal()
                         metodo_nivel()
                         break
                     else:
@@ -77,14 +78,12 @@ class Sokoban(Mapas, Movimientos):
                 if 1 in fila:
                     hay_cajas = True
                     print(f"Posición actual : {self.personaje_fila, self.personaje_columna}")
-                    print("Usa W,A,S,D para moverte por el mapa. Usa Q para utilizar tu habilidad especial.")
-                    print("Usa R para reiniciar el nivel.")
-                    print("Usa X para salir al menú.")
+                    print("Usa W,A,S,D para moverte por el mapa." "\n" "Usa Q para utilizar tu habilidad especial." "\n" "Usa R para reiniciar el nivel." "\n" "Usa X para salir al menú.")
                     self.movimientos_juego()
             if not hay_cajas:
                 break
         while True:
-            if jugar.Nivel != 3:
+            if jugar.Nivel != 4:
                 print("Nivel completado! Pulsa L para continuar o X para salir al menu.")
                 tecla_final = msvcrt.getch()
                 tecla_comp = tecla_final.decode()
