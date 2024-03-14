@@ -52,7 +52,7 @@ class Sokoban(Mapas, Movimientos):
             print("Bienvenido a Sokoban!")
             while True:
                 try:
-                    self.Nivel = int(input("Introduce el nivel deseado (1-4) y pulsa Enter para continuar:"))
+                    self.Nivel = int(input("Introduce el nivel deseado (1-5) y pulsa Enter para continuar:"))
                     # Obtener el método correspondiente al nivel
                     metodo_nivel = getattr(self, f'nivel{self.Nivel}', None)
                     # Si el método existe, llamarlo y salir del bucle
@@ -83,8 +83,8 @@ class Sokoban(Mapas, Movimientos):
             if not hay_cajas:
                 break
         while True:
-            if jugar.Nivel != 4:
-                print("Nivel completado! Pulsa L para continuar o X para salir al menu.")
+            if jugar.Nivel != 5:
+                print("¡Nivel completado! Pulsa L para continuar o X para salir al menu.")
                 tecla_final = msvcrt.getch()
                 tecla_comp = tecla_final.decode()
                 if tecla_comp.lower() == "x":
@@ -97,7 +97,7 @@ class Sokoban(Mapas, Movimientos):
                     self.limpiar_terminal()
                     self.imprimir_mapa()                  
             else:
-                print("Nivel completado! Gracias por jugar! Pulsa X para salir al menú.")
+                print("¡Nivel completado! ¡Gracias por jugar! Pulsa X para salir al menú.")
                 tecla_final = msvcrt.getch()
                 tecla_comp = tecla_final.decode()
                 if tecla_comp.lower() == "x":
@@ -106,9 +106,6 @@ class Sokoban(Mapas, Movimientos):
                 else:
                     self.limpiar_terminal()
                     self.imprimir_mapa()
-
-                
-
 
 jugar = Sokoban()
 
