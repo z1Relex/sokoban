@@ -73,7 +73,6 @@ Para moverse y realizar acciones en el juego el usuario utilizará las siguiente
 - w -> Arriba
 - s -> Abajo
 - q -> Habilidad especial
-- u -> Deshacer el último movimiento
 - r -> Reiniciar nivel
 - x -> Salir del nivel
 
