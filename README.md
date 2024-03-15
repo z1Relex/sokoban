@@ -88,7 +88,6 @@ Para moverse y realizar acciones en el juego el usuario utilizará las siguiente
 | movimientos_juego | Leer el movimiento. | Hecho | 03/03 |
 | movimientos_juego | Evaluar el movimiento del usuario. | Hecho | 03/03 |
 | seleccion_nivel | Cargar nivel / Reiniciar  | Hecho | 08/03 |
-| deshacer_mov | Deshacer el último movimiento  | Por hacer | -- |
 
 ## Derecha
 
@@ -119,10 +118,10 @@ Para moverse y realizar acciones en el juego el usuario utilizará las siguiente
 | movimiento22 | Personaje, caja,  meta | Hecho | [2,1,0] | [6,0,4] | 03/03 |
 | movimiento26 | Personaje, caja_meta, piso | Hecho | [4,6,0] | [1,5,4] | 04/03 |
 | movimiento30 | Personaje, caja_meta, meta | Hecho | [2,6,0] | [6,5,4] | 04/03 |
-| movimiento33 | Personaje_meta, meta | Hecho | [2,5] | [5,2] | 04/03 |
-| movimiento37 | Personaje_meta, caja, meta | Hecho | [2,1,5] | [6,0,2] | 04/03 |
-| movimiento41 | Personaje_meta, caja_meta, piso | Hecho | [4,6,5] | [1,5,2] | 04/03 |
-| movimiento45 | Personaje_meta, caja_meta, meta | Hecho | [2,6,5] | [6,5,2] | 04/03 |
+| movimiento34 | Personaje_meta, meta | Hecho | [2,5] | [5,2] | 04/03 |
+| movimiento38 | Personaje_meta, caja, meta | Hecho | [2,1,5] | [6,0,2] | 04/03 |
+| movimiento42 | Personaje_meta, caja_meta, piso | Hecho | [4,6,5] | [1,5,2] | 04/03 |
+| movimiento46 | Personaje_meta, caja_meta, meta | Hecho | [2,6,5] | [6,5,2] | 04/03 |
 
 ## Arriba
 
@@ -136,10 +135,10 @@ Para moverse y realizar acciones en el juego el usuario utilizará las siguiente
 | movimiento23 | Personaje, caja,  meta | Hecho | [0,1,2] | [4,0,6] | 03/03 |
 | movimiento27 | Personaje, caja_meta, piso | Hecho | [0,6,4] | [4,5,1] | 04/03 |
 | movimiento31 | Personaje, caja_meta, meta | Hecho | [0,6,2] | [4,5,6] | 04/03 |
-| movimiento33 | Personaje_meta, meta | Hecho | [5,2] | [2,5] | 04/03 |
-| movimiento37 | Personaje_meta, caja, meta | Hecho | [5,1,2] | [2,0,6] | 04/03 |
-| movimiento41 | Personaje_meta, caja_meta, piso | Hecho | [5,6,4] | [2,5,1] | 04/03 |
-| movimiento45 | Personaje_meta, caja_meta, meta | Hecho | [5,6,2] | [2,5,6] | 04/03 |
+| movimiento35 | Personaje_meta, meta | Hecho | [5,2] | [2,5] | 04/03 |
+| movimiento39 | Personaje_meta, caja, meta | Hecho | [5,1,2] | [2,0,6] | 04/03 |
+| movimiento43 | Personaje_meta, caja_meta, piso | Hecho | [5,6,4] | [2,5,1] | 04/03 |
+| movimiento47 | Personaje_meta, caja_meta, meta | Hecho | [5,6,2] | [2,5,6] | 04/03 |
 
 ## Abajo
 
@@ -153,10 +152,10 @@ Para moverse y realizar acciones en el juego el usuario utilizará las siguiente
 | movimiento24 | Personaje, caja,  meta | Hecho | [0,1,2] | [4,0,6] | 03/03 |
 | movimiento28 | Personaje, caja_meta, piso | Hecho | [0,6,4] | [4,5,1] | 04/03 |
 | movimiento32 | Personaje, caja_meta, meta | Hecho | [0,6,2] | [4,5,6] | 04/03 |
-| movimiento33 | Personaje_meta, meta | Hecho | [5,2] | [2,5] | 04/03 |
-| movimiento37 | Personaje_meta, caja, meta | Hecho | [5,1,2] | [2,0,6] | 04/03 |
-| movimiento41 | Personaje_meta, caja_meta, piso | Hecho | [5,6,4] | [2,5,1] | 04/03 |
-| movimiento45 | Personaje_meta, caja_meta, meta | Hecho | [5,6,2] | [2,5,6] | 04/03 |
+| movimiento36 | Personaje_meta, meta | Hecho | [5,2] | [2,5] | 04/03 |
+| movimiento40 | Personaje_meta, caja, meta | Hecho | [5,1,2] | [2,0,6] | 04/03 |
+| movimiento44 | Personaje_meta, caja_meta, piso | Hecho | [5,6,4] | [2,5,1] | 04/03 |
+| movimiento48 | Personaje_meta, caja_meta, meta | Hecho | [5,6,2] | [2,5,6] | 04/03 |
 
 ## Funciones especiales
 
