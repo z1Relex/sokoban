@@ -22,37 +22,23 @@ El juego Sokoban consiste en acomodar cajas en puntos determinados por las metas
 Cada nivel del juego se colocará dentro de una array bidimensional, colocando números para representar los elementos de juego.
 
 - Nivel 1
-  [3,3,3,3,3,4,4],
-  [3,0,4,4,3,4,4],
-  [3,4,3,1,3,3,3],
-  [3,4,1,4,2,2,3],
-  [3,3,3,3,3,3,3]
+![Nivel 1](https://assets.digitalocean.com/articles/alligator/boo.svg](https://imgur.com/6Aj0Tbf) "Nivel 1")
 
 - Nivel 2
-  
-  [4,4,4,4,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4],
-  [4,4,4,4,3,4,4,4,3,4,4,4,4,4,4,4,4,4,4],
-  [4,4,4,4,3,1,4,4,3,4,4,4,4,4,4,4,4,4,4],
-  [4,4,3,3,3,4,4,1,3,3,4,4,4,4,4,4,4,4,4],
-  [4,4,3,4,4,1,4,1,4,3,4,4,4,4,4,4,4,4,4],
-  [3,3,3,4,3,4,3,3,4,3,4,4,4,3,3,3,3,3,3],
-  [3,4,4,4,3,4,3,3,4,3,3,3,3,3,4,4,2,2,3],
-  [3,4,1,4,4,1,4,4,4,4,4,4,4,4,4,4,2,2,3],
-  [3,3,3,3,3,4,3,3,3,4,3,0,3,3,4,4,2,2,3],
-  [4,4,4,4,3,4,4,4,4,4,3,3,3,3,3,3,3,3,3],
-  [4,4,4,4,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4]
+
+![Nivel 2](https://assets.digitalocean.com/articles/alligator/boo.svg](https://imgur.com/6Aj0Tbf)](https://imgur.com/JilfFvl) "Nivel 2")
 
 - Nivel 3
-  [3,3,3,3,3,3,3,3,3,3,3,3,4,4],
-  [3,2,2,4,4,3,4,4,4,4,4,3,3,3],
-  [3,2,2,4,4,3,4,1,4,4,1,4,4,3],
-  [3,2,2,4,4,3,1,3,3,3,3,4,4,3],
-  [3,2,2,4,4,4,4,0,4,3,3,4,4,3],
-  [3,2,2,4,4,3,4,3,4,4,1,4,3,3],
-  [3,3,3,3,3,3,4,3,3,1,4,1,4,3],
-  [4,4,3,4,1,4,4,1,4,1,4,1,4,3],
-  [4,4,3,4,4,4,4,3,4,4,4,4,4,3],
-  [4,4,3,3,3,3,3,3,3,3,3,3,3,3]
+  
+![Nivel 3](https://assets.digitalocean.com/articles/alligator/boo.svg](https://imgur.com/6Aj0Tbf)](https://imgur.com/JilfFvl)](https://imgur.com/PcCXX5z) "Nivel 3")
+
+- Nivel 4
+
+![Nivel 4](https://assets.digitalocean.com/articles/alligator/boo.svg](https://imgur.com/6Aj0Tbf)](https://imgur.com/JilfFvl)](https://imgur.com/PcCXX5z)](https://imgur.com/PcCXX5z) "Nivel 4")
+
+- Nivel 5
+
+![Nivel 5](https://assets.digitalocean.com/articles/alligator/boo.svg](https://imgur.com/6Aj0Tbf)](https://imgur.com/JilfFvl)](https://imgur.com/PcCXX5z)](https://imgur.com/PcCXX5z)](https://imgur.com/MBtoJim) "Nivel 5")
   
 ### 2.1 Lista de elementos
 
