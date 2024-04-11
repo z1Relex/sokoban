@@ -21,25 +21,8 @@ El juego Sokoban consiste en acomodar cajas en puntos determinados por las metas
 
 Cada nivel del juego se colocará dentro de una array bidimensional, colocando números para representar los elementos de juego.
 
-- Nivel 1
-![Nivel 1](https://assets.digitalocean.com/articles/alligator/boo.svg](https://imgur.com/6Aj0Tbf) "Nivel 1")
+[Imágenes de los mapas de juego](https://imgur.com/gallery/gVzH7hO)
 
-- Nivel 2
-
-![Nivel 2](https://assets.digitalocean.com/articles/alligator/boo.svg](https://imgur.com/6Aj0Tbf)](https://imgur.com/JilfFvl) "Nivel 2")
-
-- Nivel 3
-  
-![Nivel 3](https://assets.digitalocean.com/articles/alligator/boo.svg](https://imgur.com/6Aj0Tbf)](https://imgur.com/JilfFvl)](https://imgur.com/PcCXX5z) "Nivel 3")
-
-- Nivel 4
-
-![Nivel 4](https://assets.digitalocean.com/articles/alligator/boo.svg](https://imgur.com/6Aj0Tbf)](https://imgur.com/JilfFvl)](https://imgur.com/PcCXX5z)](https://imgur.com/PcCXX5z) "Nivel 4")
-
-- Nivel 5
-
-![Nivel 5](https://assets.digitalocean.com/articles/alligator/boo.svg](https://imgur.com/6Aj0Tbf)](https://imgur.com/JilfFvl)](https://imgur.com/PcCXX5z)](https://imgur.com/PcCXX5z)](https://imgur.com/MBtoJim) "Nivel 5")
-  
 ### 2.1 Lista de elementos
 
 - 0 - Personaje
